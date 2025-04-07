@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carZ</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        div{
+            border:2px solid white;
+            background-color:rgb(114, 83, 180);
+            box-shadow:5px 5px 10px rgb(114, 83, 180);
+            width:650px;
+            height:500px;
+            margin-left:30%;
+            margin-top:10%;
+            margin-bottom:1%;
+        }
+        p{
+            font-size:20px;
+            font-family:cursive;
+            margin-left:70px;
+        }
+        p.text{
+            font-size:20px;
+            font-family:cursive; 
+            margin-left:25%;
+        }
+        input{
+            padding:1.5%;
+        }
+        input.confirm{
+            margin-left:25%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/insert" method="POST">
+            <p>Make Your Ride Confirmed By Filling This Form...</p>
+            <p class="text">Name: <input type="text" name="name" placeholder="Enter Your Name" required></p>
+            <p class="text">Gender: Male<input type="radio" name="gender" value="gender" required> Female<input type="radio" name="gender" value="gender" required> Others<input type="radio" name="gender" value="gender" required></p>
+            <p class="text">Contact: <input type="tel" name="contact" placeholder="Enter Your Contact" required></p>
+            <p class="text">No Of Passengers: <input type="number" name="passengers" placeholder="Enter No Of Passengers" required></p>
+            <p class="text">Pickup Location: <input type="text" name="plocation" placeholder="Enter Your Pickup location" required></p>
+            <p class="text">Drop Location: <input type="text" name="dlocation" placeholder="Enter Your Drop Location" required></p>
+            <p class="text">Purpose: <input type="text" name="purpose" placeholder="Enter Your Purpose of Ride" required></p>
+            <input type="submit" value="Book" class="confirm">
+        </form>
+    </div>
+</body>
+</html>

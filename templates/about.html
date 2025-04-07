@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carZ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="about">
+    <div class="navbar">
+        <a href="/home">HOME</a>
+        <a href="/about">ABOUT</a>
+        <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+        <a href="/booking">BOOKING</a>
+        <a href="/contact">CONTACT</a>
+    </div>
+    <div class="overlaya">
+        <div class="ltside1">
+            <img src="{{ url_for('static', filename='a1.jpg') }}" width="95%" style="padding:20px;">
+        </div>
+        <div class="rtside1">
+            <hr><h1 class="about">Drop Off Services</h1>
+            <h2 class="about">Best Drop Off Services With Comfortable and In-Time Rides</h2>
+            <p>Enjoy the finest drop-off services that blend comfort, reliability, and punctuality to perfection. Our rides are tailored to meet your schedule, ensuring you always arrive on time and in style. Whether it's a daily commute or a special journey, we prioritize your convenience and satisfaction, providing smooth and stress-free travel experiences every step of the way. With us, every ride becomes a delightful part of your journey.</p>
+        </div>
+        <div class="ltside2">
+            <h1 class="about">Car Rental Services</h1>
+            <h2 class="about">Best Offers With 100% Serviced Cars For Rental Services</h2>
+            <p>Discover unbeatable offers on our fully serviced rental cars, ensuring reliability and comfort for every journey. Our vehicles are meticulously maintained and ready to provide you with a seamless travel experience. Whether you're planning a quick trip or a long adventure, enjoy peace of mind and exceptional value with our rental services.</p><hr>
+        </div>
+        <div class="rtside2">
+            <img src="{{ url_for('static', filename='a2.jpg') }}" width="95%" style="padding:20px;">
+        </div>
+    </div>
+</body>
+</html>

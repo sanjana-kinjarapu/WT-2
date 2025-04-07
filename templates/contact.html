@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carZ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="about">
+    <div class="navbar">
+        <a href="/home">HOME</a>
+        <a href="/about">ABOUT</a>
+        <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+        <a href="/booking">BOOKING</a>
+        <a href="/contact">CONTACT</a>
+    </div>
+    <div class="overlay">
+        <div class="address">
+            <center><h1 style="font-style:oblique;">Address</h1></center>
+            <center><p class="contact">MG road, Beside novotel, Vizag, Andhra Pradesh</p></center>
+        </div>
+        <div class="email">
+            <center><h1 style="font-style:oblique;">Email</h1></center>
+            <center><p class="contact">emailcarz.201@gmail.com</p></center>
+            <center><p class="contact">carz.202@gmail.com</p></center>
+        </div>
+        <div class="phone">
+            <center><h1 style="font-style:oblique;">Phone</h1></center>
+            <center><p class="contact">+91 9876543210</p></center>
+            <center><p class="contact">+91 8765432109</p></center>
+        </div>
+    </div>
+</body>
+</html>

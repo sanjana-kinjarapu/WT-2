@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carZ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="about">
+    <div class="navbar">
+        <a href="/home">HOME</a>
+        <a href="/about">ABOUT</a>
+        <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+        <a href="/booking">BOOKING</a>
+        <a href="/contact">CONTACT</a>
+    </div>
+    <div class="overlay">
+        <div class="drop">
+            <center><h1 class="book">Drop Offs</h1></center>
+            <center><h2 class="book">Price:Any Ride Costs 50/- per Kilometer</h2></center>
+            <hr>
+            <center><h2 class="book">Services Offered:</h2></center>
+            <center><p>Airport Transfers</p></center>
+            <center><p>Point-to-Point Transfers</p></center>
+            <center><p>Scheduled Pickups</p></center>
+            <center><p>Business Commutes</p></center>
+            <center><p>Long Distance Travels</p></center>
+            <center><a href="/form1"><input type="submit" value="Choose Plan"></a></center>
+        </div>
+        <div class="rent">
+            <center><h1 class="book">Car Rentals</h1></center>
+            <center><h2 class="book">Price:Any Car Costs 1000/- per Hour</h2></center>
+            <hr>
+            <center><h2 class="book">Services Offered:</h2></center>
+            <center><p>Short-Term & Long-Term Rentals</p></center>
+            <center><p>Self Drive Rentals</p></center>
+            <center><p>Wide Range Of Vehicle Choices</p></center>
+            <center><p>Chauffeur Services</p></center>
+            <center><p>Airport Rentals</p></center>
+            <center><a href="/form2"><input type="submit" value="Choose Plan"></a></center>
+        </div>
+    </div>
+</body>
+</html>

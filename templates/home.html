@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carZ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home">
+    <div class="navbar">
+        <a href="/home">HOME</a>
+        <a href="/about">ABOUT</a>
+        <img src="{{ url_for('static', filename='logo.png') }}" width="150px">
+        <a href="/booking">BOOKING</a>
+        <a href="/contact">CONTACT</a>
+    </div>
+    <div class="overlay">
+        <h1 class="text-overlayh">Welcome To carZ</h1>
+        <p class="text-overlayh">Offering flexible and reliable car rental and drop-off services tailored to your unique travel needs.</p>
+        <h2 class="text-overlayh">Click Here => <a href="/booking" style="color:rgb(114, 83, 180);">Book/Rent</a></h2>
+    </div>
+</body>
+</html>
