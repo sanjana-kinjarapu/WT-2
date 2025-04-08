@@ -1,7 +1,8 @@
 from flask import *
 from flask_pymongo import PyMongo
+import os
 app=Flask(__name__)
-app.config["MONGO_URI"]="mongodb://localhost:27017/carZ"
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI", "mongodb://localhost:27017/carZ")
 mongo=PyMongo(app)
 @app.route('/')
 def index():
